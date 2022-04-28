@@ -86,23 +86,23 @@ def shufflelist():
     # set status
     status=1
     # set target
+    target=0
 
 def doshuffleorsort():
     global consecutive, status, target, maxsize, size
     # shuffle the list
     if status==0:
         shufflelist()
-        status=1
     # sort the list
     elif status==1:
         consecutive=0
-        target=0
         maxsize=size
         status=2
 
 # keypresses
 onkeypress(bye, "Escape")
 onkeypress(doshuffleorsort, "space")
+onkeypress(shufflelist, "Return")
 
 
 # main loop
