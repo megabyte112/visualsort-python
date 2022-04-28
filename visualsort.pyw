@@ -79,7 +79,7 @@ def render():
 
 # shuffling
 def shufflelist():
-    global issorted, status, target
+    global issorted, status, target, maxsize
     issorted=False
     # shuffle the list
     random.shuffle(list)
@@ -87,6 +87,8 @@ def shufflelist():
     status=1
     # set target
     target=0
+    # set maxsize
+    maxsize=size
 
 def doshuffleorsort():
     global consecutive, status, target, maxsize, size
@@ -96,7 +98,6 @@ def doshuffleorsort():
     # sort the list
     elif status==1:
         consecutive=0
-        maxsize=size
         status=2
 
 # keypresses
