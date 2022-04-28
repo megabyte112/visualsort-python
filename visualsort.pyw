@@ -9,7 +9,7 @@ width=20     # width of the bars in px
 # status
 status=0    # 0: sorted     1: shuffled     2: sorting
 
-# create the lsit
+# create the list
 list = []
 
 # current comparison index
